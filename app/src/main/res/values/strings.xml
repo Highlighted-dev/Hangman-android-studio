@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="play">PLAY</string>
+</resources>

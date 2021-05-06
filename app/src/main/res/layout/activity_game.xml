@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".game">
+
+    <EditText
+        android:id="@+id/input_enterALetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:ems="10"
+        android:hint="Enter a letter:"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/wordToGuessTextView"
+        android:layout_width="211dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="68dp"
+        android:gravity="center"
+        android:text="_ _ _ _ _ _ _"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_enterALetter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/hangman"
+        android:layout_width="363dp"
+        android:layout_height="614dp"
+        android:layout_marginBottom="104dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hangman1" />
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Enter"
+        app:backgroundTint="#2F3133"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_enterALetter" />
+
+    <TextView
+        android:id="@+id/letters"
+        android:layout_width="370dp"
+        android:layout_height="107dp"
+        android:gravity="center"
+        android:hint="Letters that you entered:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="207dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordToGuessTextView" />
+
+    <ImageView
+        android:id="@+id/volume"
+        android:layout_width="46dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:tag="volume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/volume" />
+
+    <TextView
+        android:id="@+id/won"
+        android:layout_width="264dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="80dp"
+        android:background="#46D314"
+        android:gravity="center"
+        android:text="You won!"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lost"
+        android:layout_width="264dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="80dp"
+        android:background="#D30F0F"
+        android:gravity="center"
+        android:text="You lost!"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/exit2"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
+        app:srcCompat="@drawable/logout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
